@@ -4,6 +4,10 @@
 # 2-variables_y_tipos
 # 3-control_de_flujo
 4-errores_y_math
+5_estructuras_de_datos
+6_algoritmos
+
+10_tiempo
 
 ## Presentaciones editables
 *.key
@@ -11,8 +15,12 @@
 ## Ejercicios resuelstos
 */retos_resueltos
 
-## Videos
+## Assets y Videos
 .mp4
+*/assets
+extras
+*/extras
+Lista.xlsx
 
 
 
