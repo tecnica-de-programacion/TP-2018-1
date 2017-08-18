@@ -15,6 +15,8 @@ for i in range(1,10) :
         print("{0}x{1} = {2}   ".format(i, j, i*j), end='\t')
     print("")
 
+for character in 'Hello, Whats up?' :
+    print(character)
 
 
 shopping_list = ["milk", "sugar", "cream", "chocolate", "fish"]
