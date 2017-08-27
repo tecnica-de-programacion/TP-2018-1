@@ -4,9 +4,10 @@
 # 2-variables_y_tipos
 # 3-control_de_flujo
 # 4-errores_y_math
-# 5_estructuras_de_datos
-6_algoritmos
+# 5_estructuras_de_datos_basicas
+# 6_algoritmos
 10_tiempo
+11_estructuras_de_datos_abstractas
 
 ## Presentaciones editables
 *.key
@@ -22,8 +23,6 @@ extras
 */extras
 Lista.xlsx
 ~$Lista.xlsx
-
-
 
 # Created by https://www.gitignore.io/api/macos,python,pycharm
 
