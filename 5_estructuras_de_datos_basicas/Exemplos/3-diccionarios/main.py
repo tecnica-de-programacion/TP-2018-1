@@ -36,10 +36,10 @@ print(person2)
 
 greetings = {
     'es': 'Hola',
-        'in': 'Hello',
-            'fr': 'Salut',
-                'it': 'Ciao',
-                    'gr': 'Hallo'
+    'in': 'Hello',
+    'fr': 'Salut',
+    'it': 'Ciao',
+    'gr': 'Hallo'
 }
 
 greetings2 = {
