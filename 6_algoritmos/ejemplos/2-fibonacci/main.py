@@ -12,4 +12,4 @@ def fibonacci(n):
 def fibonacci_r(n):
  if n == 1 or n == 2:
   return 1
- return fibonacci_r(n-1) + fibonacci_r(n-2)
+ return fibonacci_r(n - 1) + fibonacci_r(n - 2)
