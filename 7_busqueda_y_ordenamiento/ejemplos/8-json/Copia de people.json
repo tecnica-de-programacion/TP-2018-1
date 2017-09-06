@@ -1,0 +1,146 @@
+[
+  {
+    "_id": "59a8d151ea502cbe2df2bde0",
+    "isActive": false,
+    "age": 31,
+    "name": "Douglas Aguilar",
+    "gender": "male",
+    "company": "EQUITAX",
+    "email": "douglasaguilar@equitax.com",
+    "phone": "+1 (990) 522-3786",
+    "friends": [
+      {
+        "id": "59a8d151c960f6a4f244f7cb",
+        "name": "Reyes Johnston"
+      },
+      {
+        "id": "59a8d151872d4c8782996050",
+        "name": "Figueroa Thompson"
+      },
+      {
+        "id": "59a8d151cd5ceed4a6a7b0b7",
+        "name": "Alison Dickerson"
+      }
+    ]
+  },
+  {
+    "_id": "59a8d151d57317d7936a0d38",
+    "isActive": false,
+    "age": 30,
+    "name": "Rhonda Houston",
+    "gender": "female",
+    "company": "DOGNOST",
+    "email": "rhondahouston@dognost.com",
+    "phone": "+1 (877) 534-3769",
+    "friends": [
+      {
+        "id": "59a8d151d74014be78a0ab65",
+        "name": "Floyd Thomas"
+      },
+      {
+        "id": "59a8d1510c748ce4c017e1ee",
+        "name": "Sylvia Cantu"
+      },
+      {
+        "id": "59a8d15153d456281e2afe3c",
+        "name": "Kelly Ford"
+      }
+    ]
+  },
+  {
+    "_id": "59a8d15138bbdffbe384b77f",
+    "isActive": true,
+    "age": 26,
+    "name": "Pacheco Gardner",
+    "gender": "male",
+    "company": "TERSANKI",
+    "email": "pachecogardner@tersanki.com",
+    "phone": "+1 (864) 586-2725",
+    "friends": [
+      {
+        "id": "59a8d15157e1c3134b8d063d",
+        "name": "Deloris Mendoza"
+      },
+      {
+        "id": "59a8d1518a8a888c83db46f9",
+        "name": "Susan Watson"
+      },
+      {
+        "id": "59a8d15139c884362297cf51",
+        "name": "Eugenia Knowles"
+      }
+    ]
+  },
+  {
+    "_id": "59a8d1515d27e6f72ac74d4a",
+    "isActive": false,
+    "age": 23,
+    "name": "Jefferson Morin",
+    "gender": "male",
+    "company": "ECRATER",
+    "email": "jeffersonmorin@ecrater.com",
+    "phone": "+1 (913) 406-2727",
+    "friends": [
+      {
+        "id": "59a8d15161e5d8d7d29a53c5",
+        "name": "Bridgette Carter"
+      },
+      {
+        "id": "59a8d1518d7cfb54861219ab",
+        "name": "Hebert Nicholson"
+      },
+      {
+        "id": "59a8d1516e3ed0b315496376",
+        "name": "Elisabeth Cain"
+      }
+    ]
+  },
+  {
+    "_id": "59a8d1519f2257831174f44b",
+    "isActive": false,
+    "age": 20,
+    "name": "Burton Roth",
+    "gender": "male",
+    "company": "KRAG",
+    "email": "burtonroth@krag.com",
+    "phone": "+1 (990) 568-2372",
+    "friends": [
+      {
+        "id": "59a8d1514b32dc065ebdfad1",
+        "name": "June Levy"
+      },
+      {
+        "id": "59a8d1515d0b216be3c670f8",
+        "name": "Louisa Conrad"
+      },
+      {
+        "id": "59a8d15116c47883690f722b",
+        "name": "Gregory Rosa"
+      }
+    ]
+  },
+  {
+    "_id": "59a8d1510042e4ac60c97ce4",
+    "isActive": false,
+    "age": 34,
+    "name": "Pratt Simpson",
+    "gender": "male",
+    "company": "HATOLOGY",
+    "email": "prattsimpson@hatology.com",
+    "phone": "+1 (988) 546-2223",
+    "friends": [
+      {
+        "id": "59a8d15164bd4f613b188315",
+        "name": "Sampson Nolan"
+      },
+      {
+        "id": "59a8d151b023c2668bf88ece",
+        "name": "Juliet Watkins"
+      },
+      {
+        "id": "59a8d151674778d41b6003d4",
+        "name": "Chang Barr"
+      }
+    ]
+  }
+]

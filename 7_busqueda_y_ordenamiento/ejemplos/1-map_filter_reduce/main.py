@@ -43,3 +43,28 @@ def get_average(numbers):
 from functools import reduce
 average = reduce((lambda x, y: x * y), items) / len(items)
 print(average)
+
+
+
+# Filters más complejos
+names = ['Paco', 'Pedro', 'Miguel', 'Ana']
+filter_by_name = lambda x: x[0] == 'A'
+result = list(filter(filter_by_name, names))
+print(result)
+
+users = [
+    {
+        'name': 'Paco',
+        'age': 25
+    }, {
+        'name': 'Ana',
+        'age': 17
+    },{
+        'name': 'luis',
+        'age': 3
+    }
+]
+
+filter_by_age = lambda x: x['age'] >= 18
+result = list(filter(filter_by_age, users))
+print(result)
