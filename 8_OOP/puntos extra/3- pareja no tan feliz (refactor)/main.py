@@ -6,8 +6,7 @@ class Cuple():
         self.__propouser = propouser
 
     def __repr__(self):
-        return "{} ♥ {}\n".format(self.__resiver.name, self.__propouser.name)
-
+        return "{} - {}\n".format(self.__resiver.name, self.__propouser.name)
 
 class Person():
     gender = ""
@@ -17,12 +16,12 @@ class Person():
         self.name = person_data["name"]
         self.likes = person_data["likes"]
         self.__proposals = []
-        self.__best_match = None
-        self.__best_match_index = None
+        self.__best_match__points = None
+        self.__best_propouser_id = None
         self.__is_propousing = False
 
     def __repr__(self):
-        return "{} - {}".format(self.name, self.gender)
+        return "{} - {}".format(self.name, self.__proposals)
 
     @property
     def is_propousing(self):
@@ -41,23 +40,30 @@ class Person():
     def proposals(self):
         return self.__proposals
 
+    @property
+    def best_propousal(self):
+        return self.__best_propouser_id
+
     def add_propoisal(self, new_proposal):
         self.__proposals.append(new_proposal)
 
-        match_points = self.__proposals.index(new_proposal)
-        if self.__best_match == None:
-            self.__best_match_index = new_proposal
-            self.__best_match = 0
-        elif match_points < self.__best_match:
-            self.__best_match_index = new_proposal
-            self.__best_match = match_points
+        match_points = self.likes.index(new_proposal)
+        if self.__best_match__points is None:
+            self.__best_propouser_id = new_proposal
+            self.__best_match__points = match_points
+        elif match_points < self.__best_match__points:
+            self.__best_propouser_id = new_proposal
+            self.__best_match__points = match_points
 
     def porpousals_discarted(self):
-        discar_propousals = self.__proposals.copy()
-        if self.__best_match_index:
-            del (discar_propousals[self.__best_match])
-            self.__proposals = [self.__best_match_index]
-        return discar_propousals
+        discar_propousals_ids = []
+        if not self.__best_propouser_id is None:
+            for propouser_id in self.__proposals:
+                if self.__best_propouser_id == propouser_id:
+                    continue
+                discar_propousals_ids.append(propouser_id)
+            self.__proposals = [self.__best_propouser_id]
+        return discar_propousals_ids
 
     def remove_first_choice(self):
         self.__is_propousing = False
@@ -112,11 +118,9 @@ class Matcher():
 
         cuples = []
         for resiver in self.__resive_group.values():
-            match_index = resiver.proposals[0]
-            cuples.append(Cuple(resiver, self.__propuse_group[match_index]))
-
+            match_id = resiver.best_propousal
+            cuples.append(Cuple(resiver, self.__propuse_group[match_id]))
         return cuples
-
 
 if __name__ == "__main__":
     propusers = Parser.open_json('male')
