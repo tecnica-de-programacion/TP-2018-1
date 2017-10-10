@@ -11,7 +11,7 @@ class ResultLabel(Label):
         foreground = '#FFFFFF'
         initial_value = "0"
         center = W + E + N + S
-        bottom_left = E
+        rigth = E
         span = 4
 
     def __init__(self, master):
@@ -19,8 +19,8 @@ class ResultLabel(Label):
         self.configure(text="0")
         self.configure(bg = self.Constants.bg)
         self.configure(foreground = self.Constants.foreground)
+        self.configure(font = (self.Constants.font_family, self.Constants.font_size), anchor = self.Constants.rigth)
 
     def position(self, row, colum):
-        self.grid(row = row, column = colum, sticky = self.Constants.center)
-
+        self.grid(row = row, column = colum, sticky=self.Constants.center, columnspan = self.Constants.span)
 
