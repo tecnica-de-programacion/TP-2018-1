@@ -1,8 +1,7 @@
-from Views.CalcButton import CalcButton, CalcButtonType
-from Helpers.CustomeTypes import Number, BinaryOperator, UnaryOperator
+from Views.CalcButton import CalcButton
+from Helpers.CustomTypes import Number, BinaryOperator, UnaryOperator
 
 class KeypadView():
-
     class Constants:
         heigth = 5
         width = 4
@@ -19,15 +18,14 @@ class KeypadView():
         self.__tap_operator_handler = tap_operator_handler
 
         for index_row, row in enumerate(self.Constants.matrix):
-            for index_colum, key in enumerate(row):
+            for index_column, key in enumerate(row):
                 if not key: continue
                 button = CalcButton(master, key, action = self.__did_tap)
                 span = 1 if key != Number.ZERO else 2
-                button.position(index_row + 1, index_colum, span)
+                button.position(index_row + 1, index_column, columnspan = span)
 
     def __did_tap(self, sender):
-        if self.__tap_number_handler is None or self.__tap_operator_handler is None:
-            return
+        if self.__tap_number_handler is None or self.__tap_operator_handler is None: return
 
         if isinstance(sender, Number):
             self.__tap_number_handler(sender)
