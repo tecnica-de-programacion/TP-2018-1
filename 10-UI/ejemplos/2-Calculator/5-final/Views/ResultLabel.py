@@ -27,3 +27,4 @@ class ResultLabel(Label):
     def text(self, text):
         self.configure(text = text)
 
+

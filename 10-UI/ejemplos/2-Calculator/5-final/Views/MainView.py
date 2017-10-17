@@ -37,6 +37,3 @@ class MainView(Tk):
 
     def display(self, text):
         self.__result_label.text(text)
-
-
-

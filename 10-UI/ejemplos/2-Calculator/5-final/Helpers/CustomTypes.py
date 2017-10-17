@@ -24,8 +24,3 @@ class UnaryOperator(Enum):
     CHANGE = "±"
     EQUAL = "="
     DOT = "."
-
-class Operation(Enum):
-    UNITARY = "unitary"
-    BINARY = "binary"
-    EQUAL = "equal"
